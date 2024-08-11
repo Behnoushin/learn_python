@@ -1,9 +1,10 @@
 #abstraction یعنی ساده کردن و دیدگاه یک مفهوم 
 #abstracclass ---> ABC
 
-from abc import ABC
+from abc import ABC , abstractmethod
+
 class A(ABC):
-    @abs
+    @abstractmethod
     def printhello (self):
         
         return "hello"

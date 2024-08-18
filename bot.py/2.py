@@ -2,7 +2,7 @@ import asyncio # برای جلوگیری از خطای ورودی و خروجی 
 from telegram import Bot # برای برقراری با توکن رباتمون ار این استفاده کردیم 
 from telegram.error import TelegramError # برای ندیریت خطاهایی که در رابزه با ای پی آی تلگرامه استفاده شده
 
-TOKEN = 7352228948:AAFIPyJBKEHE13Dt0msqddRoMFnakhSqpfY
+TOKEN = '7352228948:AAFIPyJBKEHE13Dt0msqddRoMFnakhSqpfY'
 
 async def main(): # ---> این توابع به توابع ناهمگام مشهورند و چون مدل خاصب هستند قبل از تابع کلمه async می آید 
     bot = Bot(TOKEN)
@@ -11,7 +11,7 @@ async def main(): # ---> این توابع به توابع ناهمگام مشه
         updates = await bot.get_updates()
         for update in updates:
             if update.message:
-                chat_id = update.message.chat.id
+                chat_id =29637597
                 print(f"Chat ID: {chat_id}")
         
         a = input("text: ") # پیاممون
